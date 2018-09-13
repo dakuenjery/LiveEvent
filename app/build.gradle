@@ -20,11 +20,17 @@ android {
     }
 }
 
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     implementation "android.arch.lifecycle:extensions:1.1.1"
+
+//    implementation "com.github.dakuenjery.liveevent:liveevent:master-SNAPSHOT"
     implementation project(":liveevent")
 
 
